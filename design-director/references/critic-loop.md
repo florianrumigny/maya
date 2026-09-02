@@ -1,6 +1,6 @@
 # Fresh-context visual critic
 
-Use a separate subagent when available. Spawn it without inherited conversation history when the agent system supports that option, and pass only the critic packet in its initial task. A full-history fork is not an independent review. The context boundary matters: the critic should judge the rendered work rather than defend its implementation history.
+Use a separate subagent when available. Spawn it without inherited conversation history when the agent system supports that option, and pass only the critic packet in its initial task. A full-history fork is not an independent review. The context boundary matters: the critic should judge the rendered work rather than defend its implementation history. If no independent context is available, explicitly switch roles and withhold implementation rationale from the review packet.
 
 ## Critic packet
 
@@ -9,6 +9,7 @@ Provide only:
 - stable product frame;
 - direction cards or selected thesis;
 - probe or implementation screenshots;
+- a baseline screenshot when improving existing work;
 - named references, labeled as quality bars rather than copy targets;
 - the rubric below.
 
@@ -32,7 +33,7 @@ First describe the immediate impression without softening it. Then assess:
 9. feasibility risks during implementation.
 
 Return the three highest-impact changes in priority order. When comparing
-directions, rank them and explain the tradeoff; do not invent a hybrid unless
+directions or a redesign against its baseline, rank them and explain the tradeoff; do not invent a hybrid unless
 two directions have a genuinely compatible thesis.
 ```
 

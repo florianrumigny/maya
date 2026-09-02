@@ -62,8 +62,8 @@ Suggested defaults:
 
 ## Persist context
 
-If the project uses `PRODUCT.md`, preserve the product frame there. If it uses `DESIGN.md`, record the approved system there after user confirmation. Link reference images by durable project path when available.
+Follow [design-contract.md](design-contract.md) to choose the artifact set. In most app projects, preserve the product frame in `PRODUCT.md`, record approved design judgment in `DESIGN.md`, and express implementation constraints in the project's actual token/theme and component layer. Link reference images by durable project path when available.
 
 Keep exploration notes separate from normative design rules. The random seed explains how a direction was found; it is not a production token.
 
-Completion criterion: another agent can implement the chosen direction without seeing rejected concepts or re-running discovery.
+Completion criterion: another agent can implement the chosen direction without seeing rejected concepts or re-running discovery, and can locate the executable primitives without reverse-engineering prose.

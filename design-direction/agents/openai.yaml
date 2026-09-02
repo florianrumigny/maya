@@ -1,6 +1,0 @@
-interface:
-  display_name: "Design Direction"
-  short_description: "Explore and select a distinctive product design direction"
-  default_prompt: "Use $design-direction to explore and select a visual direction before implementation."
-policy:
-  allow_implicit_invocation: true
