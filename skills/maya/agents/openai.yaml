@@ -1,6 +1,8 @@
 interface:
   display_name: "MAYA"
   short_description: "Direct distinctive product design into a durable system"
+  icon_small: "./assets/brand/maya-icon.png"
+  icon_large: "./assets/brand/maya-logo-primary.png"
   brand_color: "#F5B51B"
   default_prompt: "Use $maya to explore, critique, and establish the most advanced design direction this product can sustain."
 policy:

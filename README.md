@@ -1,5 +1,9 @@
 # MAYA
 
+<p align="center">
+  <img src="skills/maya/assets/brand/maya-logo-primary-512.png" width="320" alt="MAYA — a relic becoming a design system">
+</p>
+
 **Most Advanced Yet Acceptable.**
 
 MAYA is a design-direction skill for AI coding agents. It helps teams explore distinctive visual directions, critique existing interfaces, select a coherent design thesis, and turn that decision into durable product guidance and implementation primitives.
@@ -148,6 +152,12 @@ skills/maya/
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
+├── assets/
+│   └── brand/
+│       ├── maya-icon.png
+│       ├── maya-logo-symbol.svg
+│       ├── maya-logo-primary.png
+│       └── logo variants
 ├── references/
 │   ├── critic-loop.md
 │   ├── design-contract.md
@@ -160,6 +170,15 @@ skills/maya/
 ```
 
 The entrypoint contains routing and completion criteria. Branch-specific guidance stays in references so agents load only what the current design task needs.
+
+## Brand assets
+
+MAYA's symbol is a **relic in construction**: one half is resolved and expressive; the other exposes the geometry, alternatives, and decision points behind it. The embedded `M` connects both halves.
+
+- Use `maya-logo-primary.png` for large presentations and repository artwork.
+- Use `maya-icon.png` or `maya-logo-symbol.svg` at small sizes.
+- Use the light, dark, or monochrome variants when the primary mark lacks contrast.
+- See [BRAND.md](BRAND.md) for the palette, spacing, minimum sizes, and asset map.
 
 ## Inspirations
 
