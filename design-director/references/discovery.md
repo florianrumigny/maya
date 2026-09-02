@@ -31,11 +31,17 @@ Use three distances:
 - `adjacent`: borrows organizing logic from a neighboring world.
 - `frontier`: tests a surprising metaphor or composition while preserving usability.
 
-Do not deepen every card. Ask the user which 2-4 create a reaction, then invest in those.
+Ask the user which cards create a reaction, then deepen only that shortlist.
 
 ## Random seed method
 
-The seed is an external creative stimulus, not hidden product truth. Read it through several lenses:
+Use seeded mode when the user asks to be surprised, has no references, or requests random exploration. Generate one seed per initial direction before writing the cards:
+
+```bash
+node <skill-directory>/scripts/generate-seeds.mjs --count 8
+```
+
+Match `--count` to the number of initial directions. The seed is an external creative stimulus, not hidden product truth. Read it through several lenses:
 
 - segmentation and clusters;
 - repetition and interruption;

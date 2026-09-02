@@ -4,13 +4,13 @@ Create the smallest non-duplicative artifact set that lets future agents underst
 
 ## Default artifact split
 
-| Layer | Default artifact | Contains | Must not become |
+| Layer | Default artifact | Contains | Boundary |
 |---|---|---|---|
-| Product intent | `PRODUCT.md` | audience, jobs, product promise, platform, constraints, anti-goals, success criteria | a visual style guide |
-| Design judgment | `DESIGN.md` | selected thesis, reader/user framing, hierarchy, composition, content evidence, type/color/material/motion logic, signature patterns, anti-patterns, accessibility intent | a dump of every exploration or raw token values |
-| Brand identity | `BRAND.md`, only when warranted | voice, identity assets, logo rules, imagery world, brand-specific color/type governance | a duplicate of `DESIGN.md` |
-| Executable primitives | project-native source | tokens, themes, reusable components, variants, states, motion constants | prose that drifts away from the implementation |
-| Evaluation | lightweight fixtures and checks | comparison scenarios, captures, recurring feedback, deterministic checks | a permanent log of one-off taste reactions |
+| Product intent | `PRODUCT.md` | audience, jobs, product promise, platform, constraints, anti-goals, success criteria | Product decisions only |
+| Design judgment | `DESIGN.md` | selected thesis, hierarchy, composition, content evidence, visual and motion logic, signature patterns, accessibility intent | Approved rules rather than exploration history or raw tokens |
+| Brand identity | `BRAND.md`, only when warranted | voice, identity assets, logo rules, imagery world, brand-specific type and color governance | Brand rules that genuinely extend beyond `DESIGN.md` |
+| Executable primitives | project-native source | tokens, themes, reusable components, variants, states, motion constants | Exact implementation values |
+| Evaluation | lightweight fixtures and checks | comparison scenarios, captures, recurring feedback, deterministic checks | Generalizable findings rather than one-off reactions |
 
 `PRODUCT.md` and `DESIGN.md` are recommended outputs once a direction is approved, but adapt to an existing repository's canonical files. Do not create aliases that duplicate current sources of truth.
 
@@ -23,24 +23,42 @@ Create the smallest non-duplicative artifact set that lets future agents underst
 
 The executable layer is the implementation source of truth for exact values. `DESIGN.md` explains why and when to use those values.
 
-## Minimum `DESIGN.md` shape
+## Selected-direction record
 
 ```md
 # Design Direction
 
 ## Product and user frame
 ## Design thesis
+## Emotional target
 ## Experience principles
 ## Content and evidence hierarchy
 ## Composition and responsive/native behavior
 ## Typography, color, shape, imagery, and motion
 ## Signature patterns
 ## States and accessibility
-## Avoid
+## Preserve
+## Reject
+## Open questions, risks, and tests
 ## References and implementation pointers
 ```
 
 Include only sections that carry decisions. Favor concrete rules with examples and honest caveats over adjectives such as “clean,” “premium,” or “modern.”
+
+## Declare authorities
+
+Record:
+
+```md
+Implementation driver: [one skill or workflow]
+Visual reference: [selected direction and probes]
+UX/platform authority: [one skill or workflow]
+Quality gates: [critique, accessibility, responsive/native behavior, performance]
+```
+
+Fill this block from the applicable platform reference.
+
+Keep exploration notes separate from normative rules. A random seed explains how a direction was found; it is not a production token.
 
 ## Creation gate
 

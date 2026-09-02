@@ -27,17 +27,13 @@ Use the critique to write the redesign brief, not to prescribe the final look.
 
 ## Compare fairly
 
-For each finalist and the baseline, use the same prompt or task, content/data, model when relevant, platform, viewport, and capture procedure. Ask a human or fresh critic to judge the rendered artifacts without implementation rationale.
+For each finalist and the baseline, reuse the Probe step's task, content, state, viewport, and platform constraints; also hold the model, when relevant, and capture procedure constant. Ask a human or fresh critic to judge the rendered artifacts without implementation rationale.
 
-Evaluate:
+Use the rubric in [critic-loop.md](critic-loop.md), adding these comparison-specific questions:
 
 - faster first read and deeper audit;
-- product and audience fit;
-- hierarchy, composition, typography, and color;
 - concrete evidence and honest caveats in the copy;
-- task completion and state clarity;
-- distinctiveness without category reflexes or AI tells;
-- accessibility, platform literacy, and implementation risk.
+- task completion and state clarity.
 
 ## Place feedback in the narrowest durable layer
 
@@ -49,8 +45,15 @@ Evaluate:
 
 Human judgment owns subjective hierarchy, composition, and brand fit. Deterministic checks own known mechanical failures. Neither replaces the other.
 
+## Finish pass
+
+After the highest-impact corrections:
+
+1. Remove elements that contribute neither task, meaning, trust, nor identity.
+2. Replace category reflexes and obvious AI-generated tells with choices supported by the thesis.
+3. Verify native or responsive behavior, accessibility, critical states, and performance.
+4. Ask the user to approve or rewrite high-salience copy such as the hero, onboarding promise, and primary action.
+
 ## Keep the loop lightweight
 
 Start with one repeated representative scenario, a baseline capture, the selected comparison, and a short correction list. Add formal fixtures or automated checks only after a failure repeats or the artifact type recurs enough to justify them.
-
-Completion criterion: the next iteration is better for observable reasons, and reusable learning has landed in the correct source of truth without bloating every layer.

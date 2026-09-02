@@ -33,8 +33,8 @@ First describe the immediate impression without softening it. Then assess:
 9. feasibility risks during implementation.
 
 Return the three highest-impact changes in priority order. When comparing
-directions or a redesign against its baseline, rank them and explain the tradeoff; do not invent a hybrid unless
-two directions have a genuinely compatible thesis.
+directions or a redesign against its baseline, rank them and explain the
+tradeoff. Propose a hybrid only when two directions share a compatible thesis.
 ```
 
 ## Scorecard
@@ -49,11 +49,3 @@ Score each dimension from 1-5 and attach one sentence of evidence:
 - polish.
 
 The score is diagnostic. Do not iterate until an arbitrary total is reached.
-
-## Loop bound
-
-- One pass before direction selection.
-- Up to two passes after implementation.
-- Continue only when changes are converging and another pass is worth its cost.
-
-Completion criterion: critique identifies a ranked, finite correction set rather than a vague redesign request.
