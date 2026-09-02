@@ -75,14 +75,34 @@ MAYA follows the open Agent Skills format and is not limited to Codex. It can be
 - Cline
 - Windsurf
 
-Run the standard installation command and select the agents where MAYA should be installed:
+The installation command above automatically detects compatible agents and lets you select where MAYA should be installed.
 
-````bash
-npx skills add florianrumigny/maya --skill maya
+You can also target a specific agent:
+
+```bash
+# Codex
+npx skills add florianrumigny/maya --skill maya -a codex
+
+# Claude Code
+npx skills add florianrumigny/maya --skill maya -a claude-code
+
+# Cursor
+npx skills add florianrumigny/maya --skill maya -a cursor
+
+# GitHub Copilot
+npx skills add florianrumigny/maya --skill maya -a github-copilot
+
+# Gemini CLI
+npx skills add florianrumigny/maya --skill maya -a gemini-cli
+```
+
+The core workflow and references are agent-independent. The `agents/openai.yaml` file only provides additional metadata for OpenAI environments and can be ignored by other agents.
+
+When independent sub-agents are supported, MAYA can use one for fresh-context critique. Otherwise, it performs the review through an explicit critic-role switch.
 
 ## Recommended companion skills
 
-MAYA works on its own. The following tools unlock its full orchestration workflow.
+MAYA works on its own. The following optional skills unlock its full orchestration workflow.
 
 ### Impeccable
 
@@ -90,7 +110,7 @@ MAYA works on its own. The following tools unlock its full orchestration workflo
 
 ```bash
 npx impeccable install
-````
+```
 
 Use Impeccable as the UX and quality authority while MAYA owns the direction process and selection record.
 
