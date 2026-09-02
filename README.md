@@ -62,6 +62,24 @@ python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github
   --path skills/maya
 ```
 
+## Compatibility
+
+MAYA follows the open Agent Skills format and is not limited to Codex. It can be installed in any compatible agent through the [Agent Skills CLI](https://github.com/vercel-labs/skills#supported-agents), including:
+
+- Codex
+- Claude Code
+- Cursor
+- GitHub Copilot
+- Gemini CLI
+- OpenCode
+- Cline
+- Windsurf
+
+Run the standard installation command and select the agents where MAYA should be installed:
+
+````bash
+npx skills add florianrumigny/maya --skill maya
+
 ## Recommended companion skills
 
 MAYA works on its own. The following tools unlock its full orchestration workflow.
@@ -72,7 +90,7 @@ MAYA works on its own. The following tools unlock its full orchestration workflo
 
 ```bash
 npx impeccable install
-```
+````
 
 Use Impeccable as the UX and quality authority while MAYA owns the direction process and selection record.
 
