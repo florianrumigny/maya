@@ -1,11 +1,13 @@
 ---
-name: design-director
+name: maya
 description: "Design direction for new, in-progress, or existing app and web interfaces. Use to establish an axis from a sparse brief, compare visual directions, critique a current design, or convert an approved direction into durable guidance and primitives."
 ---
 
-# Design Director
+# MAYA
 
 Orchestrate product framing, visual divergence, independent critique, selection, and design-system handoff. Keep product behavior stable while visual hypotheses compete.
+
+Use **Most Advanced Yet Acceptable** as a calibration principle, not a house style: push each direction beyond the category default while preserving product comprehension, usability, and trust.
 
 ## Route the work
 
@@ -25,7 +27,7 @@ Load references only when their branch fires:
 
 ## Authority model
 
-Design Director owns orchestration, the discovery conversation, and the decision record. Use the platform references to route Impeccable, Taste, image generation, and native/Expo expertise by stage.
+MAYA owns orchestration, the discovery conversation, and the decision record. Use the platform references to route Impeccable, Taste, image generation, and native/Expo expertise by stage.
 
 ## Workflow
 
