@@ -37,10 +37,10 @@ The skill stops for explicit direction approval before implementation.
 
 ### Agent Skills CLI
 
-Replace `<your-github-username>` with the repository owner after forking or publishing:
+Install MAYA directly from the public repository:
 
 ```bash
-npx skills add https://github.com/<your-github-username>/maya-design-director --skill maya
+npx skills add https://github.com/florianrumigny/maya --skill maya
 ```
 
 Reload your agent or start a new session after installation.
@@ -51,14 +51,14 @@ You can also ask Codex:
 
 ```text
 Install the maya skill from
-https://github.com/<your-github-username>/maya-design-director/tree/main/skills/maya
+https://github.com/florianrumigny/maya/tree/main/skills/maya
 ```
 
 Or use Codex's bundled installer directly:
 
 ```bash
 python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo <your-github-username>/maya-design-director \
+  --repo florianrumigny/maya \
   --path skills/maya
 ```
 
@@ -166,6 +166,7 @@ skills/maya/
 │   ├── mobile.md
 │   └── web.md
 └── scripts/
+    ├── build-brand-assets.py
     └── generate-seeds.mjs
 ```
 
