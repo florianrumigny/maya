@@ -17,13 +17,24 @@ Critical states:
 Emotional intent:
 Constraints:
 Anti-goals:
+Approved visual system or unresolved choices:
 ```
 
-If these answers are not available, apply Impeccable's product and platform guidance inside this discovery conversation. Avoid launching a second interview or writing `PRODUCT.md`/`DESIGN.md` during exploration. Visual probes built on an unstable frame compare different products instead of different designs.
+Resolve missing answers within this conversation, using Impeccable's product and platform guidance when available. Keep the frame in exploration notes until [design-contract.md](design-contract.md) applies. Continue when the primary job, action, content, states, and constraints define one functional skeleton for all candidates.
+
+## Exploration modes
+
+Record the mode before gathering visual material:
+
+- `guided`: default when no direction is validated or previous proposals feel generic. Complete [inspiration-research.md](inspiration-research.md) before creating guided cards.
+- `seeded`: use when the user requests random exploration or surprise. Follow the random seed method below; reference research is outside this branch.
+- `mixed`: use when the user wants both researched and random alternatives. Prepare and freeze the seeded interpretations first, then run the guided research. Keep each card's origin explicit.
+
+An absent reference set alone is a reason for guided research, not automatic randomization. When refining a validated direction, reuse its recorded evidence; reopen research if it no longer supports the requested changes.
 
 ## Broad verbal exploration
 
-Create 6-10 short cards. In seeded mode, generate the same number of seeds first and let one seed shape each card. Each card should fit on roughly six lines and recruit a source world outside the immediate software category: an object, place, ritual, publication, instrument, architecture, material practice, natural system, or cultural artifact.
+Create 6-10 compact cards unless the user specifies a different count. Derive guided cards from the presented research territories and seeded cards from their frozen interpretations. In mixed mode, split the total between the two branches and label each card individually. Cover the distinct territories before developing variations within one.
 
 Use three distances:
 
@@ -31,17 +42,17 @@ Use three distances:
 - `adjacent`: borrows organizing logic from a neighboring world.
 - `frontier`: tests a surprising metaphor or composition while preserving usability.
 
-Ask the user which cards create a reaction, then deepen only that shortlist.
+Present the cards after the anti-convergence check. Continue when the user has shortlisted 2-4 cards or explicitly delegated that choice; deepen only the shortlist.
 
 ## Random seed method
 
-Use seeded mode when the user asks to be surprised, has no references, or requests random exploration. Generate one seed per initial direction before writing the cards:
+Generate one seed per seeded direction before collecting research or interpreting visual references:
 
 ```bash
 node <skill-directory>/scripts/generate-seeds.mjs --count 8
 ```
 
-Match `--count` to the number of initial directions. The seed is an external creative stimulus, not hidden product truth. Read it through several lenses:
+Match `--count` to the seeded portion of the exploration. The seed is an external creative stimulus, not hidden product truth. Read it through several lenses:
 
 - segmentation and clusters;
 - repetition and interruption;
@@ -65,6 +76,10 @@ Translate the observations into a coherent subset of decisions:
 
 Use judgment rather than encoding every character. Product requirements, accessibility, platform conventions, and the user's stated taste override the seed.
 
+Record the exact seed, observed structure, and resulting visual hypothesis in exploration notes. Run the anti-convergence check below on the seeded hypotheses, then freeze their interpretations before guided research begins: research must not steer seed selection, rerolls, or their initial meaning. If research is already in context, use an independent context supplied only with the product frame and user constraints; if unavailable, disclose that independence cannot be guaranteed. Any later reference-informed revision becomes a guided derivative with its provenance recorded.
+
+Continue when each seeded candidate has this record. Show the interpretation on its card; reveal the exact seed when the user requests reproducibility details.
+
 ## Direction card
 
 ```md
@@ -74,6 +89,7 @@ Exploration mode: [seeded | guided]
 Thesis: [one sentence]
 Emotion: [specific response]
 Source world: [non-software reference and borrowed logic]
+Origin: [guided: territory ID and source IDs; seeded: interpretation and internal seed-record ID]
 System: [composition, typography, palette mechanics, material/imagery, motion]
 Signature: [one memorable but useful moment]
 Risk: [main way this direction could fail]
@@ -81,13 +97,11 @@ Risk: [main way this direction could fail]
 
 ## Anti-convergence check
 
-Before shortlisting, compare the cards pairwise. Two cards are duplicates when they share most of these: layout topology, type voice, palette mechanics, material, imagery strategy, motion energy, and signature moment. Replace duplicates with a direction from a different source world.
+Before shortlisting, compare the cards pairwise across layout topology, type voice, palette mechanics, material, imagery strategy, motion energy, and signature moment. Each pair must differ on at least two of these dimensions beyond a color or font swap.
 
 Run two reflex checks:
 
 1. Could the direction be guessed from the product category alone?
 2. Could it be guessed from the category plus the instruction to avoid the obvious category style?
 
-If either answer is yes, move one level farther from the category while preserving the product frame.
-
-Keep exact seed values only in internal exploration notes for shortlisted directions. Reveal them when the user requests reproducibility details.
+If either answer is yes or a pair fails the distinction test, revisit that branch's preparation while preserving the product frame. In mixed comparisons, resolve overlap by revising guided cards while keeping the seeded interpretations frozen. Continue when the pairwise and reflex checks pass.

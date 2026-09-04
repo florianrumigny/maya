@@ -8,13 +8,15 @@
 
 MAYA is a design-direction skill for AI coding agents. It helps teams explore distinctive visual directions, critique existing interfaces, select a coherent design thesis, and turn that decision into durable product guidance and implementation primitives.
 
-MAYA is one orchestrator skill with focused references for mobile, web, critique, evaluation, discovery, and design-system handoff. It can coordinate other design skills without merging their instructions into one oversized prompt.
+MAYA is one orchestrator skill with focused references for discovery, inspiration research, visual foundations, mobile, web, critique, evaluation, and design-system handoff. It can coordinate other design skills without merging their instructions into one oversized prompt.
 
 ## What MAYA does
 
 - Frames the product, audience, task, constraints, and emotional intent before styling.
+- Researches real references across multiple disciplines and presents distinct territories before visual proposals.
 - Generates meaningfully different design directions at grounded, adjacent, and frontier distances.
-- Supports optional random-seed exploration when the brief has no visual starting point.
+- Supports independent random-seed exploration and mixed guided/seeded comparisons.
+- Compares applied style tiles when identity is unresolved, when requested before screens, or when probes lack personality or coherence.
 - Produces comparable image probes for native mobile, web products, and brand websites.
 - Uses a fresh-context critic to review probes and rendered implementations.
 - Handles greenfield projects, unresolved work in progress, and existing redesigns.
@@ -24,14 +26,16 @@ MAYA is one orchestrator skill with focused references for mobile, web, critique
 ## Workflow
 
 1. **Frame** the stable product and platform constraints.
-2. **Diverge** into distinct verbal directions, optionally using random seeds.
-3. **Probe** shortlisted directions with matched content, state, task, and viewport.
-4. **Critique** the rendered artifacts from a fresh context.
-5. **Select** one dominant thesis with explicit preserve and reject decisions.
-6. **Contract** the direction into durable guidance and executable primitives.
-7. **Evaluate** the implementation against matched captures and recurring checks.
+2. **Research** references and group them into territories for guided exploration; prepare the random branch independently in seeded or mixed mode.
+3. **Diverge** into distinct verbal directions with traceable origins.
+4. **Foundations**, when needed: compare typography, color roles, form, imagery, material, motion, and signature through matched style tiles.
+5. **Probe** shortlisted directions with matched content, state, task, and viewport.
+6. **Critique** the rendered artifacts from a fresh context.
+7. **Select** one dominant thesis with explicit preserve and reject decisions.
+8. **Contract** the direction into durable guidance and executable primitives.
+9. **Evaluate** the implementation against matched captures and recurring checks.
 
-The skill stops for explicit direction approval before implementation.
+Foundations remain provisional until tested on a representative screen. The skill stops for explicit direction approval before implementation and formalizing final rules or token values.
 
 ## Installation
 
@@ -201,10 +205,11 @@ skills/maya/
 │   ├── design-contract.md
 │   ├── discovery.md
 │   ├── evaluation-loop.md
+│   ├── inspiration-research.md
 │   ├── mobile.md
+│   ├── visual-foundations.md
 │   └── web.md
 └── scripts/
-    ├── build-brand-assets.py
     └── generate-seeds.mjs
 ```
 

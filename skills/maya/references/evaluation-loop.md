@@ -27,13 +27,7 @@ Use the critique to write the redesign brief, not to prescribe the final look.
 
 ## Compare fairly
 
-For each finalist and the baseline, reuse the Probe step's task, content, state, viewport, and platform constraints; also hold the model, when relevant, and capture procedure constant. Ask a human or fresh critic to judge the rendered artifacts without implementation rationale.
-
-Use the rubric in [critic-loop.md](critic-loop.md), adding these comparison-specific questions:
-
-- faster first read and deeper audit;
-- concrete evidence and honest caveats in the copy;
-- task completion and state clarity.
+For each finalist and the baseline, reuse the scenario from [mobile.md](mobile.md) or [web.md](web.md); also hold the model, when relevant, and capture procedure constant. Use [critic-loop.md](critic-loop.md) for the review packet, comparison rubric, and iteration limits.
 
 ## Place feedback in the narrowest durable layer
 

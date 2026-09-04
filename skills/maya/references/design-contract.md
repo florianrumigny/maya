@@ -2,6 +2,8 @@
 
 Create the smallest non-duplicative artifact set that lets future agents understand the product, exercise design judgment, and implement consistently. Inspect existing project conventions before proposing filenames.
 
+Enter after the user approves a direction supported by a representative screen. Promote only decisions that survived that screen: style-tile preference alone does not validate a system. Keep unvalidated values in exploration notes until resolved.
+
 ## Default artifact split
 
 | Layer | Default artifact | Contains | Boundary |

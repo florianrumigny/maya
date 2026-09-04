@@ -11,6 +11,8 @@ Do not use a landing-page aesthetic as the visual model for authenticated produc
 
 ## Probe sets
 
+Enter with shortlisted direction cards and any provisional style tiles from the Foundations stage in [SKILL.md](../SKILL.md). Pass the stable product frame, each card with its origin, and any tile to the image generator. Treat generated UI as a visual hypothesis, not a product specification.
+
 ### Web product
 
 Use the same representative workflow, realistic data, viewport, and state across directions. One primary screen is usually sufficient; add an empty, loading, or detail state when it reveals the design system.
@@ -19,15 +21,15 @@ Use Taste image generation only as a visual probe. Impeccable remains the produc
 
 ### Web brand
 
-For each direction, generate:
+Keep content, task, state, viewport, and functional structure matched across directions. For each direction, generate:
 
 1. the hero;
 2. one section that explains or demonstrates value;
 3. one proof or conversion section when needed.
 
-Use Taste `imagegen-frontend-web` when available. During divergence, override its full-page default: generate only the comparable probe sections. Generate the complete section set after selection.
+Use Taste `imagegen-frontend-web` when available, with native image generation as the fallback. During Probe, override its full-page default: generate only the comparable probe sections. Generate the complete section set after selection.
 
-When the product has no identity, Taste `brandkit` may generate a compact board for each final contender. Use it after the verbal shortlist so logo and mockup generation do not prematurely lock the exploration.
+Continue to critique when each candidate has a matched representative screen or section set and any tile-derived system can be judged with real content.
 
 ## Implementation routing
 
