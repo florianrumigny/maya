@@ -54,6 +54,16 @@ npx skills add https://github.com/florianrumigny/maya --skill maya
 
 Reload your agent or start a new session after installation.
 
+### Update an installed copy
+
+After pushing changes to the repository, update a global MAYA installation with:
+
+```bash
+npx skills update maya -g -y
+```
+
+Use `-p` instead of `-g` for a project-scoped installation. Start a new agent turn after the update so it reloads the skill. This command applies to installations managed by the Agent Skills CLI; the source repository must be recorded in the installed skill metadata.
+
 ### Codex installer
 
 You can also ask Codex:
