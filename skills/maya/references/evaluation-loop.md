@@ -1,6 +1,6 @@
 # Critique and evaluation loop
 
-Use this loop for an in-progress or existing design and after implementation of a selected direction. The goal is not an abstract score; it is a fair comparison and a better project memory.
+Use the baseline and comparison sections for an in-progress or existing design and after implementation. Use the learning section when closing an exploration or evaluation with user feedback. The goal is not an abstract score; it is a fair comparison and a better project memory.
 
 ## Establish the baseline
 
@@ -29,15 +29,20 @@ Use the critique to write the redesign brief, not to prescribe the final look.
 
 For each finalist and the baseline, reuse the scenario from [mobile.md](mobile.md) or [web.md](web.md); also hold the model, when relevant, and capture procedure constant. Use [critic-loop.md](critic-loop.md) for the review packet, comparison rubric, and iteration limits.
 
-## Place feedback in the narrowest durable layer
+## Learn from corrections
 
-- Put recurring judgment in `DESIGN.md`.
-- Put reusable mechanics in tokens, themes, components, classes, or examples.
-- Put repeated mechanical failures in deterministic tests or checks.
-- Fix the evaluation scenario when the comparison itself is invalid.
-- Do not encode a model-specific or personal one-off unless it recurs and generalizes.
+Separate feedback by scope:
 
-Human judgment owns subjective hierarchy, composition, and brand fit. Deterministic checks own known mechanical failures. Neither replaces the other.
+- **Local decision:** applies to this variant, screen, or task. Keep it in the conversation or existing exploration notes and apply it within the authorized scope.
+- **Durable candidate:** could guide future work in this project. State its scope and supporting evidence; repeated feedback or an explicitly general user preference can justify a proposal, but repetition alone does not make a rule.
+
+For each durable candidate, consult the canonical destinations in [design-contract.md](design-contract.md). Present the exact proposed wording, rationale, destination, and whether it adds, merges, replaces, or removes an existing rule. Surface contradictions and stale guidance rather than appending another layer. Project preferences stay in the project; they do not become general MAYA rules.
+
+Obtain explicit user approval before promoting a learning into any durable source. Apply only the approved change; leave pending or rejected candidates in exploration context without a separate learning backlog. Reuse the existing wording when it already covers the feedback. If no candidate generalizes, close without a document update.
+
+For authorized implementation, reusable mechanics belong in project-native primitives; repeated mechanical failures may justify deterministic checks. Human judgment still owns composition and brand fit. Correct invalid comparison scenarios before drawing lessons from them.
+
+Complete when local decisions are separated from durable candidates, every proposed promotion has wording and a destination, and only explicitly approved promotions have been written. Pending proposals do not block delivery of the exploration.
 
 ## Finish pass
 

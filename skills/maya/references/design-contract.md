@@ -12,7 +12,7 @@ Enter after the user approves a direction supported by a representative screen. 
 | Design judgment | `DESIGN.md` | selected thesis, hierarchy, composition, content evidence, visual and motion logic, signature patterns, accessibility intent | Approved rules rather than exploration history or raw tokens |
 | Brand identity | `BRAND.md`, only when warranted | voice, identity assets, logo rules, imagery world, brand-specific type and color governance | Brand rules that genuinely extend beyond `DESIGN.md` |
 | Executable primitives | project-native source | tokens, themes, reusable components, variants, states, motion constants | Exact implementation values |
-| Evaluation | lightweight fixtures and checks | comparison scenarios, captures, recurring feedback, deterministic checks | Generalizable findings rather than one-off reactions |
+| Evaluation | lightweight fixtures and checks | comparison scenarios, captures, deterministic checks | Mechanical evidence; learning proposals follow `evaluation-loop.md` |
 
 `PRODUCT.md` and `DESIGN.md` are recommended outputs once a direction is approved, but adapt to an existing repository's canonical files. Do not create aliases that duplicate current sources of truth.
 
@@ -71,4 +71,4 @@ Before writing files, present:
 3. overlaps that will be removed;
 4. which decisions remain provisional.
 
-Obtain user approval before replacing existing normative files.
+Obtain explicit user approval for the proposed normative changes before creating or updating them. Direction selection alone is not approval of these edits. Later feedback promotions use [Learn from corrections](evaluation-loop.md#learn-from-corrections).

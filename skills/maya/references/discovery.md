@@ -2,6 +2,14 @@
 
 Use this reference to keep exploration broad without losing product relevance.
 
+## Real material first
+
+Before designing, read the project's canonical product, brand, and design guidance (`PRODUCT.md`, `BRAND.md`, `DESIGN.md`, or existing equivalents). Inspect the relevant rendered UI, source components, tokens, assets, content, and critical states where they exist. Use this material to frame the alternatives; preserve approved primitives unless the requested exploration explicitly reopens them.
+
+Record the sources consulted, commitments to preserve, choices open to change, and conflicts between guidance and implementation. If rendering or source access is unavailable, identify the missing evidence and use the available material; keep affected conclusions provisional. For greenfield work, start from the supplied brief and assets.
+
+Continue when the available material is inspected and the preserved/open boundaries are explicit. Keep this frame in the conversation or existing exploration notes; create no additional source of truth for it.
+
 ## Stable product frame
 
 Summarize the invariant frame in one compact block:
@@ -24,7 +32,7 @@ Resolve missing answers within this conversation, using Impeccable's product and
 
 ## Exploration modes
 
-Record the mode before gathering visual material:
+Record the mode before gathering external inspiration. Inspecting the project's own material remains part of framing in every mode:
 
 - `guided`: default when no direction is validated or previous proposals feel generic. Complete [inspiration-research.md](inspiration-research.md) before creating guided cards.
 - `seeded`: use when the user requests random exploration or surprise. Follow the random seed method below; reference research is outside this branch.

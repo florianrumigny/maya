@@ -39,7 +39,7 @@ For an adaptive app, state which details follow iOS and which follow Android. A 
 
 ## Implementation routing
 
-After selection:
+For authorized implementation after selection:
 
 - Use Impeccable as the UX and quality authority.
 - Use the relevant native/Expo skill as implementation authority.

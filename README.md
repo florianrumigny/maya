@@ -13,29 +13,34 @@ MAYA is one orchestrator skill with focused references for discovery, inspiratio
 ## What MAYA does
 
 - Frames the product, audience, task, constraints, and emotional intent before styling.
+- Inspects existing project guidance, rendered UI, components, tokens, and content before exploring.
 - Researches real references across multiple disciplines and presents distinct territories before visual proposals.
 - Generates meaningfully different design directions at grounded, adjacent, and frontier distances.
 - Supports independent random-seed exploration and mixed guided/seeded comparisons.
 - Compares applied style tiles when identity is unresolved, when requested before screens, or when probes lack personality or coherence.
 - Produces comparable image probes for native mobile, web products, and brand websites.
+- Routes working web comparisons to Emil Kowalski's `prototype`, including complete pages when requested.
 - Uses a fresh-context critic to review probes and rendered implementations.
+- Shows a temporary, route-aware status card so the current phase, decisions, and next action stay visible.
 - Handles greenfield projects, unresolved work in progress, and existing redesigns.
 - Converts an approved direction into `PRODUCT.md`, `DESIGN.md`, optional `BRAND.md`, and project-native tokens or components.
-- Turns recurring feedback into design guidance, reusable mechanics, or deterministic checks.
+- Separates local corrections from durable learning proposals for user approval.
 
 ## Workflow
 
-1. **Frame** the stable product and platform constraints.
+1. **Frame** the stable product and platform constraints from real project material.
 2. **Research** references and group them into territories for guided exploration; prepare the random branch independently in seeded or mixed mode.
 3. **Diverge** into distinct verbal directions with traceable origins.
 4. **Foundations**, when needed: compare typography, color roles, form, imagery, material, motion, and signature through matched style tiles.
 5. **Probe** shortlisted directions with matched content, state, task, and viewport.
 6. **Critique** the rendered artifacts from a fresh context.
 7. **Select** one dominant thesis with explicit preserve and reject decisions.
-8. **Contract** the direction into durable guidance and executable primitives.
+8. **Contract** the direction through a proposed set of canonical guidance and executable primitives.
 9. **Evaluate** the implementation against matched captures and recurring checks.
 
-Foundations remain provisional until tested on a representative screen. The skill stops for explicit direction approval before implementation and formalizing final rules or token values.
+Foundations remain provisional until tested on a representative screen. Selecting a direction allows exploration refinement; production integration requires an explicit request. Normative document changes require approval of the proposed edits.
+
+For hesitation between existing alternatives, MAYA can move from framing to probes. Exploration and evaluation close with the selective learning process in [evaluation-loop.md](skills/maya/references/evaluation-loop.md#learn-from-corrections).
 
 ## Installation
 
@@ -146,6 +151,12 @@ npx skills add https://github.com/Leonxlnx/taste-skill --skill design-taste-fron
 
 When Taste is unavailable, MAYA can use the environment's native image-generation capability as a fallback.
 
+### Prototype — Emil Kowalski
+
+[Emil's `prototype`](https://github.com/emilkowalski/skills/blob/main/skills/prototype/SKILL.md) builds interactive variants behind a visual picker. MAYA uses it as an optional exploration companion; its routing and scoped page-comparison behavior live in [web.md](skills/maya/references/web.md#executable-comparison--prototype).
+
+The companion is user-invoked. MAYA can propose it; hosts that require a named invocation need the user to invoke `prototype` explicitly. Select Emil's implementation when another installed skill shares that name.
+
 ## Usage
 
 Invoke the skill explicitly with `$maya`, or describe a matching design-direction task when automatic skill discovery is enabled.
@@ -187,6 +198,14 @@ PRODUCT.md, DESIGN.md, brand guidance, tokens, themes, components, and checks.
 Show me the proposed file changes before writing them.
 ```
 
+### Compare complete portfolio pages
+
+```text
+Use $maya and $prototype to compare three complete homepage directions for
+my portfolio. Start from its existing UI, components, and real content.
+Let me try each direction; keep the work in exploration space.
+```
+
 ## Architecture
 
 ```text
@@ -208,12 +227,13 @@ skills/maya/
 │   ├── inspiration-research.md
 │   ├── mobile.md
 │   ├── visual-foundations.md
+│   ├── status.md
 │   └── web.md
 └── scripts/
     └── generate-seeds.mjs
 ```
 
-The entrypoint contains routing and completion criteria. Branch-specific guidance stays in references so agents load only what the current design task needs.
+The entrypoint contains routing and completion criteria. Branch-specific guidance stays in references so agents load only what the current design task needs. `skills/maya/` is the canonical distributable; installed copies should be refreshed from it rather than maintained separately.
 
 ## Brand assets
 

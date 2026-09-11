@@ -21,23 +21,26 @@ Load references only when their branch fires:
 - Product framing, exploration modes, seeds, and direction cards: [discovery.md](references/discovery.md).
 - Guided research routed by discovery: [inspiration-research.md](references/inspiration-research.md).
 - No approved visual system, a request to compare type and color before screens, or probes lacking personality or coherence: [visual-foundations.md](references/visual-foundations.md).
-- `in-progress`, `existing`, or post-implementation review: [evaluation-loop.md](references/evaluation-loop.md).
+- `in-progress`, `existing`, post-implementation review, or learning from exploration feedback: [evaluation-loop.md](references/evaluation-loop.md).
+- Multi-turn exploration, resuming work, or a request for current progress: [status.md](references/status.md).
 - Screen probes or implementation for `native-mobile`: [mobile.md](references/mobile.md).
-- Screen probes or implementation for either web surface: [web.md](references/web.md).
+- Web component or page comparisons, screen probes, or implementation: [web.md](references/web.md).
 - Style tiles, probes, or captures that will affect a decision: [critic-loop.md](references/critic-loop.md).
 - Approved direction moving to implementation: [design-contract.md](references/design-contract.md).
 
 ## Authority model
 
-MAYA owns orchestration, the discovery conversation, and the decision record. Use the platform references to route Impeccable, Taste, image generation, and native/Expo expertise by stage.
+MAYA owns orchestration, the discovery conversation, the decision record, and the temporary run status. Platform references route companion skills by stage. Selecting a direction authorizes refinement in exploration space; production integration requires an explicit user request, including when a companion normally promotes its winner automatically.
+
+For a multi-turn run, show the compact status card from `status.md` at the start and at phase changes. Keep it temporary and separate from durable project guidance.
 
 ## Workflow
 
 ### 1. Frame
 
-Build the stable product frame in `discovery.md`. For `in-progress`, separate commitments, hypotheses, and open questions. For `existing`, establish the matched baseline in `evaluation-loop.md` and choose `preserve`, `evolve`, or `overhaul`.
+Inspect the real material and build the stable product frame in `discovery.md`. For `in-progress`, separate commitments, hypotheses, and open questions. For `existing`, establish the matched baseline in `evaluation-loop.md` and choose `preserve`, `evolve`, or `overhaul`.
 
-Continue when the product frame and exploration mode are recorded and, when applicable, a reproducible baseline exists. For an already approved direction, resume at Contract or Evaluate unless the task reopens exploration.
+Continue when the product frame and exploration mode are recorded and, when applicable, a reproducible baseline exists. For an approved direction, resume at Contract or Evaluate unless the task reopens exploration. For hesitation between existing web alternatives, go to Probe with the framed choices; reopen research only when their rationale is insufficient.
 
 ### 2. Research
 
@@ -59,7 +62,7 @@ Continue when the foundation study meets its exit criterion, or the existing sys
 
 ### 5. Probe
 
-Use `mobile.md` or `web.md` to create matched screen probes from the direction cards and any provisional foundations.
+Use `mobile.md` or `web.md` to create matched probes from the shortlisted directions or framed alternatives and any provisional foundations.
 
 Continue when every candidate carried forward meets the platform reference's probe criterion.
 
@@ -73,11 +76,11 @@ Continue when the critic's exit criterion is met and the evidence supports selec
 
 Ask the user to choose one direction or a compatible synthesis with one dominant thesis. Record the winner, rejected patterns, properties to preserve, open questions, and platform risks. When motion defines the thesis, optionally create one short motion study after the static direction is accepted.
 
-Stop before implementation. This step is complete only when the user explicitly confirms the direction.
+This step is complete when the user explicitly confirms the direction. Before closing an exploration, use the learning section of `evaluation-loop.md`, even when implementation is deferred.
 
 ### 8. Contract
 
-After confirmation, create the durable implementation contract in `design-contract.md`.
+After direction confirmation, propose the durable implementation contract through the creation gate in `design-contract.md`.
 
 This step is complete when another agent can implement the direction from the approved contract and locate its executable primitives without repeating discovery.
 
@@ -85,4 +88,4 @@ This step is complete when another agent can implement the direction from the ap
 
 Use `evaluation-loop.md` and `critic-loop.md` on representative rendered captures.
 
-Finish when the matched comparison is valid, blocking findings are resolved or explicitly deferred, and reusable feedback lives in its narrowest source of truth.
+Finish when the matched comparison is valid, blocking findings are resolved or explicitly deferred, and the learning criterion in `evaluation-loop.md` is met.
