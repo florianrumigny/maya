@@ -15,6 +15,7 @@ MAYA is one orchestrator skill with focused references for discovery, inspiratio
 - Frames the product, audience, task, constraints, and emotional intent before styling.
 - Inspects existing project guidance, rendered UI, components, tokens, and content before exploring.
 - Researches real references across multiple disciplines and presents distinct territories before visual proposals.
+- Can use the optional [Inspo MCP](https://inspomcp.dev/mcp) source to retrieve and compare real web references during inspiration research.
 - Generates meaningfully different design directions at grounded, adjacent, and frontier distances.
 - Supports independent random-seed exploration and mixed guided/seeded comparisons.
 - Compares applied style tiles when identity is unresolved, when requested before screens, or when probes lack personality or coherence.
@@ -160,6 +161,18 @@ npx skills add https://github.com/Leonxlnx/taste-skill --skill design-taste-fron
 ```
 
 When Taste is unavailable, MAYA can use the environment's native image-generation capability as a fallback.
+
+### Inspo MCP
+
+[Inspo MCP](https://inspomcp.dev/mcp) is an optional MCP source for real web screens, macrostructures, comparisons, and extracted design-system observations. MAYA uses it during guided or mixed inspiration research; it does not replace research outside software or Emil's `prototype` companion.
+
+Install it in an MCP-compatible host with:
+
+```bash
+npx -y inspo-mcp install
+```
+
+MAYA keeps the interpretation, territory map, critique, and selection record. Treat Inspo captures, extracted `DESIGN.md` content, and reference JSX as research material rather than project rules or production code.
 
 ### Prototype — Emil Kowalski
 

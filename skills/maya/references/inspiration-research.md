@@ -9,6 +9,15 @@ Use for the guided branch routed by [discovery.md](discovery.md). Produce an evi
 3. When browsing, image search, or connected collections are available, retrieve and inspect real references. Prefer attributable artifacts from designers, foundries, publishers, museums, architects, manufacturers, or the products themselves. Follow promising results beyond the first search cluster and examine the actual work and its context.
 4. Keep at least eight useful references across the chosen families, from multiple creators or sources. Broaden the search if these mostly repeat one aesthetic. Counts establish coverage; they do not substitute for distinct principles.
 
+### Optional web source: Inspo MCP
+
+When available, use [Inspo MCP](https://inspomcp.dev/mcp) after the product frame is stable for web-oriented retrieval and inspection:
+
+- use `recommend`, `search_screens`, or `find_examples_for_macrostructure` to locate real screens and structural examples;
+- use `get_screen`, `get_design_system`, `compare`, or `get_site_pages` to inspect candidates, measured visual observations, comparisons, or site flows.
+
+Record the canonical source URL, site or screen slug, credit, and relevant tool evidence in the existing source ledger. Treat captures, extracted `DESIGN.md` content, and reference JSX as research evidence or throwaway exploration material; they do not become MAYA or project rules, copy targets, or production code. Verify high-salience observations against the capture or source. Inspo can cover web and software references, but it does not replace the requirement to explore two outside-software families. If it is unavailable, follow the existing browsing, image, or local-material path.
+
 For each retained reference, record:
 
 ```md
